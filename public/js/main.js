@@ -4,8 +4,6 @@ var numPalavras = frase.split(" ").length;
 var tamanhoFrase = $("#tamanho-frase");
 tamanhoFrase.text(numPalavras);
 
-console.log(tamanhoFrase);
-
 var campo = $(".campo-digitacao");
 
 campo.on("input", function(){
