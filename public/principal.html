@@ -3,22 +3,55 @@
 <head> 
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
     <body>
-        <h1>Alura Typer</h1>
-        <p class="frase">Lorem ipsum dolor sit am  et, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <ul class="informacoes">
-            <li><span id="tamanho-frase">30</span>  palavras</li>
-            <li>10 segundos</li>
-        </ul>
+        <div class="container">
 
-        <textarea class="campo-digitacao" cols="30" rows="10"></textarea>
-        
-        <ul>
-            <li><span id="contador-caracteres">0</span> caracteres</li>
-            <li><span id="contador-palavras">0</span> palavras</li>    
-        </ul>
+            <h1 class="center">Alura Typer</h1>
+            <p class="frase center">Lorem ipsum dolor sit am  et, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul class="informacoes center">
+                <li>
+                    <i class="small material-icons icones">description</i>
+                    <span id="tamanho-frase">30</span>  palavras</li>
+                <li>
+                    <i class="small material-icons icones">query_builder</i>
+                    <span id="tempo-digitacao">10</span> segundos</li>
+            </ul>
 
+            <textarea class="campo-digitacao" cols="30" rows="10"></textarea>
+
+
+            <div class="botoes">
+                <a class="btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar">
+                    <i class="material-icons">restore</i></a>
+            </div>
+            
+            <ul class="center">
+                <li><span id="contador-caracteres">0</span> caracteres</li>
+                <li><span id="contador-palavras">0</span> palavras</li>    
+            </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+                <table class="centered bordered">
+                    <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>No. de palavras</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Douglas</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        </div>
         <script src="js/jquery.js"></script>
         <script src="js/main.js"></script>
     </body>
