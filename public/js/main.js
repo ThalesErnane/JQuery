@@ -1,6 +1,7 @@
 var tempoInicial = $("#tempo-digitacao").text();
 var campo = $(".campo-digitacao");
 
+
 // OU atalho $(function() {} 
 
 $(document).ready(function() {
@@ -89,19 +90,7 @@ function reiniciaJogo(){
     campo.removeClass("borda-verde"); 
 }
 
-function inserePlacar(){
-    var corpoTabela = $(".placar").find("tbody");
-    var usuario = "Thales";
-    var numPalavras = $("#contador-palavras").text();
 
-    var linha = "<tr>" +
-                    "<td>" + usuario + "</td>" +
-                    "<td>" + numPalavras + "</td>" +
-                "</tr>";
- 
-    corpoTabela.prepend(linha);
-
-}
 
 // $("#botao-reiniciar").on("click", function(){
 //   console.log("Botão Clicado");
