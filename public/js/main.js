@@ -12,6 +12,15 @@ $(document).ready(function() {
     $("#botao-reiniciar").click(reiniciaJogo); // chama a function 
 
     atualizaPlacar();
+        
+    $("#usuarios").selectize({
+        create: true,
+        sortField: 'text'
+    });
+
+    $(".tooltip").tooltipster({
+        trigger: "custom"
+    });
 
 });
 
@@ -95,8 +104,3 @@ function reiniciaJogo(){
     campo.removeClass("borda-verde"); 
 }
 
-
-
-// $("#botao-reiniciar").on("click", function(){
-//   console.log("Botão Clicado");
-// });
